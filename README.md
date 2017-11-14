@@ -16,8 +16,7 @@ Publication:
 } 
 ```
 
-
-## Installation
+<<<<<<< HEAD
 
 Simply clone the source code from this repository and apply the following environment configuration: 
 
@@ -76,7 +75,6 @@ It also supports real devices, you may need to adapt related code for your speci
 
 ## License
 [BSD License] (https://github.com/Rhapsod/sapienz/blob/master/LICENSE)
-
 
 ## Contact
 <dreamict@gmail.com>
