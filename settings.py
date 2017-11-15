@@ -7,16 +7,17 @@ HEADLESS = False
 
 # === Emulator ===
 DEVICE_NUM = 1
-AVD_BOOT_DELAY = 60
-AVD_SERIES = "api27_"
+AVD_BOOT_DELAY = 30
+AVD_SERIES = "api19_"
 EVAL_TIMEOUT = 120
 # if run on Mac OS, use "gtimeout"
 TIMEOUT_CMD = "timeout"
 
 
 # === Env. Paths ===
+import os
 # path should end with a '/'
-ANDROID_HOME = '/media/david/FILES/Android/Sdk/'
+ANDROID_HOME = os.environ.get("ANDROID_SDK_HOME", "/home/$USER/Android/Sdk") + os.sep
 ADB = ANDROID_HOME + 'platform-tools/adb'
 EMULATOR = ANDROID_HOME + 'emulator/emulator'
 AAPT = ANDROID_HOME + 'build-tools/27.0.1/aapt'
